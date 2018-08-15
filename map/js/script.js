@@ -42,59 +42,9 @@ function initMap() {
         fullscreenControlOptions: {
             position: google.maps.ControlPosition.LEFT_TOP
         },
-        streetViewControl: true,
-        streetViewControlOptions: {
-            position: google.maps.ControlPosition.LEFT_TOP
-        },
-        styles: [{
-                elementType: 'labels.text.fill',
-                stylers: [{
-                    color: '#293C40'
-                }]
-            },
-            {
-                elementType: 'labels.text.stroke',
-                stylers: [{
-                    color: '#ffffff'
-                }]
-            },
-            {
-                featureType: 'landscape.manmade',
-                elementType: 'geometry.fill',
-                stylers: [{
-                    color: '#6CC2C1'
-                }]
-            }, //land ends
-            {
-                featureType: 'water',
-                stylers: [{
-                    color: '#000138'
-                }]
-            }, //water ends
-            {
-                featureType: 'landscape.natural',
-                stylers: [{
-                    color: '#ed6bef'
-                }]
-            }, //land ends
-
-
-            {
-                featureType: 'road.highway',
-                stylers: [{
-                    color: '#6CC2C1'
-                }]
-            }, //highway ensds
-            {
-                featureType: 'poi',
-                elementType: 'geometry.fill',
-                stylers: [{
-                    color: '#a46dc4'
-                }]
-            }, //highway ensds
-
-
-        ] //styles end
+        streetViewControl: false
+        };
+        
     } //options end
 
 
