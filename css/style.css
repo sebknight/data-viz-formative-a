@@ -1,4 +1,26 @@
-body {
-  background: floralwhite; }
+.header {
+  outline: 2px solid blue;
+  text-align: center; }
+
+.map {
+  outline: 2px solid green;
+  height: 500px; }
+
+.description {
+  outline: 2px solid pink;
+  padding: 2em;
+  text-align: center; }
+
+.main {
+  outline: 2px solid orange; }
+
+.main h3 {
+  padding: 1em;
+  text-align: center; }
+
+.visOne, .visTwo, .visThree {
+  outline: 2px solid red;
+  height: 400px;
+  margin-bottom: 2em; }
 
 /*# sourceMappingURL=style.css.map */
