@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "class": "18WDWU02",
+    "transport": {
+      "bus": 3,
+      "drive": 2,
+      "train": 2,
+      "walk": 4
+    },
+    "suburb": {
+      "Te Aro": 2,
+      "Mount Cook": 1,
+      "Thorndon": 1,
+      "Hataitai": 1,
+      "Aro Valley": 1,
+      "Evans Bay": 1,
+      "Wainuiomata": 2,
+      "Island Bay": 1,
+      "Grenada Village": 0,
+      "Ngaio": 1,
+      "Newtown": 0,
+      "Newlands": 0,
+      "Lower Hutt": 0,
+      "Strathmore": 0,
+      "Mount Victoria": 0,
+      "Levin": 0
+    }
+  },
+  {
+    "id": 2,
+    "class": "18WDCD07",
+    "transport": {
+      "bus": 5,
+      "drive": 1,
+      "train": 1,
+      "walk": 2
+    },
+    "suburb": {
+      "Te Aro": 0,
+      "Mount Cook": 1,
+      "Thorndon": 1,
+      "Hataitai": 0,
+      "Aro Valley": 0,
+      "Evans Bay": 0,
+      "Wainuiomata": 1,
+      "Island Bay": 0,
+      "Grenada Village": 1,
+      "Ngaio": 0,
+      "Newtown": 3,
+      "Newlands": 1,
+      "Lower Hutt": 0,
+      "Strathmore": 0,
+      "Mount Victoria": 1,
+      "Levin": 0
+    }
+  },
+  {
+    "id": 1,
+    "class": "18WDWG04",
+    "transport": {
+      "bus": 1,
+      "drive": 1,
+      "train": 2,
+      "walk": 2
+    },
+    "suburb": {
+      "Te Aro": 0,
+      "Mount Cook": 1,
+      "Thorndon": 0,
+      "Hataitai": 0,
+      "Aro Valley": 0,
+      "Evans Bay": 0,
+      "Wainuiomata": 0,
+      "Island Bay": 0,
+      "Grenada Village": 0,
+      "Ngaio": 0,
+      "Newtown": 0,
+      "Newlands": 0,
+      "Lower Hutt": 2,
+      "Strathmore": 1,
+      "Mount Victoria": 1,
+      "Levin": 1
+    }
+  },
+]
