@@ -1,40 +1,58 @@
 body {
   color: #FFF;
   background-color: #131921;
-  font-family: 'Questrial', sans-serif; }
+  font-family: 'Questrial', sans-serif;
+}
 
 .container-fluid {
-  padding: 0; }
+  padding: 0;
+}
 
 .header {
   background: #67BAE7;
-  text-align: center; }
+  text-align: center;
+}
 
 .heading {
   font-family: 'Questrial', sans-serif;
   font-size: 3em;
   margin: 0;
   padding: 25px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
 .map {
   outline: 1px solid #353F4C;
-  height: 500px; }
+  height: 500px;
+}
 
 .description {
   background-color: #EEAD48;
   padding: 2em;
-  text-align: center; }
+  text-align: center;
+}
 
 .main {
-  padding: 0 50px; }
+  padding: 0 50px;
+}
 
 .main h3 {
   padding: 1em;
-  text-align: center; }
+  text-align: center;
+}
 
 .visOne, .visTwo, .visThree {
   height: 400px;
-  margin-bottom: 2em; }
+  margin-bottom: 2em;
+}
 
+.dropdown {
+  display: inline;
+}
+
+.dropdown-toggle {
+  background-color: #67BAE7;
+  color: floralwhite;
+  margin-left: 1rem;
+}
 /*# sourceMappingURL=style.css.map */

@@ -56,3 +56,13 @@ body{
     height: 400px;
     margin-bottom: 2em;
 }
+
+.dropdown {
+    display: inline;
+}
+
+.dropdown-toggle {
+    background-color: $blue;
+    color: $primary-color;
+    margin-left: 1rem;
+}
