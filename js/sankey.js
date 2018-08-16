@@ -85,11 +85,11 @@ function initChart(query){
 };
 
 // Button event listeners
-button18WDCD07.addEventListener("click", function(){
+button18WDWU02.addEventListener("click", function(){
     initChart(0);
 }, false);
 
-button18WDWU02.addEventListener("click", function(){
+button18WDCD07.addEventListener("click", function(){
     initChart(1);
 }, false);
 
