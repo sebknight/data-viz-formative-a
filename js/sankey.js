@@ -1,12 +1,17 @@
+// global variable
 var data;
 
+// Start ajax request
 $.ajax({
   type: 'get',
   url: 'js/chart-data.json',
   dataType: 'json',
   success: function(jsonData){
+    // Here we are console logging the data we have recieved from the request
     console.log(jsonData);
+    // On success the chart is initialised
     initChart();
+    // Here we are pushing the data we recieved into our global variable
     data = jsonData;
   },
   error: function(error){
@@ -14,10 +19,10 @@ $.ajax({
     console.log('error');
   }
 });
+// End ajax request
 
 // Function that initialises the chart once the json data is successfully retrieved
 function initChart(){
-  // console.log();
 
   google.charts.load('current', {'packages':['sankey']});
   google.charts.setOnLoadCallback(drawChart);
@@ -28,6 +33,7 @@ function initChart(){
           vis.addColumn('string', 'To');
           vis.addColumn('number', 'Weight');
           vis.addRows([
+            // Here we are going into the data to get the info we need
             [ data[0].class, 'Bus', data[0].transport.bus ],
             [ data[0].class, 'Walk', data[0].transport.walk ],
             [ data[0].class, 'Drive', data[0].transport.drive ],
