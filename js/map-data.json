@@ -69,55 +69,90 @@
     "id": 12,
     "class": "18WDCD07",
     "transport": "walk",
-    "suburb": "Te Aro"
+    "suburb": "Mount Cook"
   },
   {
     "id": 13,
     "class": "18WDCD07",
     "transport": "walk",
-    "suburb": "Te Aro"
+    "suburb": "Thorndon"
   },
   {
     "id": 14,
     "class": "18WDCD07",
     "transport": "bus",
-    "suburb": "Mount Cook"
+    "suburb": "Newtown"
   },
   {
     "id": 15,
     "class": "18WDCD07",
     "transport": "bus",
-    "suburb": "Thorndon"
+    "suburb": "Newtown"
   },
   {
     "id": 16,
     "class": "18WDCD07",
     "transport": "bus",
-    "suburb": "Grenada Village"
+    "suburb": "Newtown"
   },
   {
     "id": 17,
     "class": "18WDCD07",
     "transport": "bus",
-    "suburb": "Evans Bay"
+    "suburb": "Wainuiomata"
   },
   {
     "id": 18,
     "class": "18WDCD07",
     "transport": "bus",
-    "suburb": "Island Bay"
+    "suburb": "Mount Victoria"
   },
   {
     "id": 19,
     "class": "18WDCD07",
     "transport": "train",
-    "suburb": "Wainuiomata"
+    "suburb": "Newlands"
   },
   {
     "id": 20,
     "class": "18WDCD07",
     "transport": "drive",
     "suburb": "Wainuiomata"
+  },
+  {
+    "id": 21,
+    "class": "18WDWG04",
+    "transport": "walk",
+    "suburb": "Mount Cook"
+  },
+  {
+    "id": 22,
+    "class": "18WDWG04",
+    "transport": "walk",
+    "suburb": "Mount Victoria"
+  },
+  {
+    "id": 23,
+    "class": "18WDWG04",
+    "transport": "bus",
+    "suburb": "Strathmore"
+  },
+  {
+    "id": 24,
+    "class": "18WDWG04",
+    "transport": "train",
+    "suburb": "Lower Hutt"
+  },
+  {
+    "id": 25,
+    "class": "18WDWG04",
+    "transport": "train",
+    "suburb": "Lower Hutt"
+  },
+  {
+    "id": 26,
+    "class": "18WDWG04",
+    "transport": "drive",
+    "suburb": "Levin"
   }
-
 ]
