@@ -1,14 +1,41 @@
 google.charts.load('current', {packages: ['corechart']});
 google.charts.setOnLoadCallback(drawChart);
 
+//global variable
+var data;
+
+// Start ajax request
+$.ajax({
+  type: 'get',
+  url: 'js/chart-data.json',
+  dataType: 'json',
+  success: function(jsonData){
+    // Here we are console logging the data we have recieved from the request
+    console.log(jsonData);
+    // On success the chart is initialised
+    initChart();
+    // Here we are pushing the data we recieved into our global variable
+    data = jsonData;
+  },
+  error: function(error){
+    console.log(error);
+    console.log('error');
+  }
+});
+
 function drawChart(){
 
-    const data = google.visualization.arrayToDataTable([
+    data = google.visualization.arrayToDataTable([
+        // ["Class" , "Number of Students"],
+        // ["Web & UX" , 18],
+        // ["Film" , 9],
+        // ["Game Design" , 12],
+        // ["Graphic Design" , 7]
         ["Class" , "Number of Students"],
-        ["Web & UX" , 18],
-        ["Film" , 9],
-        ["Game Design" , 12],
-        ["Graphic Design" , 7]
+        [data[0].class , data[0].studentTotal],
+        [data[1].class , data[1].studentTotal],
+        [data[2].class , data[2].studentTotal]
+
     ]);
 
     //the options
@@ -44,5 +71,7 @@ $( "#columnFilterSbmt" ).click(function() {
             console.log($(this).val());
         }
     });
+    //NOW JUST NEED TO CHANGE THE DATA TO THE COLUMN CLASSES ARRAY 
+    console.log(columnClasses);
 
 });

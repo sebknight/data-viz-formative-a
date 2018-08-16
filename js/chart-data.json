@@ -2,6 +2,7 @@
   {
     "id": 1,
     "class": "18WDWU02",
+    "studentTotal": 11,
     "transport": {
       "bus": 3,
       "drive": 2,
@@ -30,6 +31,7 @@
   {
     "id": 2,
     "class": "18WDCD07",
+    "studentTotal": 9,
     "transport": {
       "bus": 5,
       "drive": 1,
@@ -58,6 +60,7 @@
   {
     "id": 3,
     "class": "18WDWG04",
+    "studentTotal": 6,
     "transport": {
       "bus": 1,
       "drive": 1,
