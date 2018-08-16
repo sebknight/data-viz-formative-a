@@ -10,9 +10,8 @@
 </head>
 <body>
     <h1>Test</h1>
-    <div id="panel">
-        <h2>Start:</h2>
-        <select id="suburb-form">
+    <div>
+        <select id="suburbForm">
             <option value="te aro, wellington">Te Aro</option>
             <option value="mount cook, wellington">Mt Cook</option>
             <option value="thorndon, wellington">Thorndon</option>
@@ -28,22 +27,24 @@
             <option value="newtown, wellington">Newtown</option>
             <option value="newlands, wellington">Newlands</option>
             <option value="lower hutt, wellington">Lower Hutt</option>
-            <option value="levin">Levin</option>
         </select>
-        <select id="class-time-form">
+        <select id="classTimeForm">
             <option value="morning">8:30 - 12:00</option>
             <option value="midday">12:00 - 3:30</option>
             <option value="afternoon">3:30 - 7:00</option>
         </select>
-
-
+        <select id="transportForm">
+            <option value="DRIVING">Car</option>
+            <option value="WALKING">Walking</option>
+            <option value="TRANSIT">Public transport</option>
+        </select>   
     </div>
     <div id="map"></div>
     <!-- <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC217vwq-CMQ3Zr-7JDVqdVboM0UONqNhQ"></script>
-    <script src="js/suburbs.js"></script>
+    <script src="js/time.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
