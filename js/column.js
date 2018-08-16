@@ -5,10 +5,10 @@ function drawChart(){
 
     const data = google.visualization.arrayToDataTable([
         ["Class" , "Number of Students"],
-        ["Web & UX" , 10],
-        ["Game Design" , 18],
-        ["Film" , 8],
-        ["Graphic Design" , 23]
+        ["2013" , 58719],
+        ["2014" , 57243],
+        ["2015" , 61038],
+        ["2016" , 59430]
     ]);
 
     //the options
