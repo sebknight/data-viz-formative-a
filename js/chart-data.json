@@ -13,11 +13,11 @@
       "Mount Cook": 1,
       "Thorndon": 1,
       "Hataitai": 1,
-      "Aro Valley": 1,
+      "Aro Valley": 0,
       "Evans Bay": 1,
       "Wainuiomata": 2,
       "Island Bay": 1,
-      "Grenada Village": 0,
+      "Grenada Village": 1,
       "Ngaio": 1,
       "Newtown": 0,
       "Newlands": 0,
@@ -41,11 +41,11 @@
       "Mount Cook": 1,
       "Thorndon": 1,
       "Hataitai": 0,
-      "Aro Valley": 0,
+      "Aro Valley": 1,
       "Evans Bay": 0,
       "Wainuiomata": 1,
       "Island Bay": 0,
-      "Grenada Village": 1,
+      "Grenada Village": 0,
       "Ngaio": 0,
       "Newtown": 3,
       "Newlands": 1,
@@ -56,7 +56,7 @@
     }
   },
   {
-    "id": 1,
+    "id": 3,
     "class": "18WDWG04",
     "transport": {
       "bus": 1,
@@ -82,5 +82,5 @@
       "Mount Victoria": 1,
       "Levin": 1
     }
-  },
+  }
 ]
