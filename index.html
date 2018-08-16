@@ -22,6 +22,17 @@
 
             <h3 class="heading">Second Heading</h3>
             <div id="filter"></div>
+            <div id="columnFilter">
+                <form class="" action="index.html" method="post">
+                    <label for="columnClasses">Select Class:</label><br>
+                    <input type="checkbox" name="columnClass" value="web">Web<br>
+                    <input type="checkbox" name="columnClass" value="film">Film<br>
+                    <input type="checkbox" name="columnClass" value="game">Game<br>
+                    <input type="checkbox" name="columnClass" value="graphic">Graphic<br>
+                    <input type="submit" id="columnFilterSbmt" value="Submit">
+
+                </form>
+            </div>
             <div class="col-md-12 visOne" id="columnContainer"></div>
             <div class="col-md-12 visTwo" id="timelineContainer"></div>
             <div class="col-md-12 visThree" id="sankeyContainer"></div>
