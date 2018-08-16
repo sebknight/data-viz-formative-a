@@ -1,25 +1,41 @@
+body {
+  color: #FFF;
+  background-color: #131921;
+  font-family: 'Questrial', sans-serif; }
+
+.container-fluid {
+  padding: 0; }
+
 .header {
-  outline: 2px solid blue;
+  background: #67BAE7;
   text-align: center; }
 
+.heading {
+  font-family: 'Questrial', sans-serif;
+  font-size: 3em;
+  margin: 0;
+  padding: 25px;
+  text-transform: uppercase; }
+
 .map {
-  outline: 2px solid green;
+  outline: 1px solid #353F4C;
   height: 500px; }
 
 .description {
-  outline: 2px solid pink;
+  background-color: #EEAD48;
   padding: 2em;
   text-align: center; }
 
 .main {
-  outline: 2px solid orange; }
+  padding: 0 50px;
+  outline: 1px solid #353F4C; }
 
 .main h3 {
   padding: 1em;
   text-align: center; }
 
 .visOne, .visTwo, .visThree {
-  outline: 2px solid red;
+  outline: 1px solid #353F4C;
   height: 400px;
   margin-bottom: 2em; }
 
