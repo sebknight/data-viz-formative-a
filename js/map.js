@@ -21,7 +21,7 @@ $.ajax({
 });
 // End ajax request
 
-// Function that initialises the chart once the json data is successfully retrieved
+// Function that initialises the map once the json data is successfully retrieved
 function initMap() {
 
     var directionsService = new google.maps.DirectionsService;
@@ -38,6 +38,14 @@ function initMap() {
         calculateAndDisplayRoute(directionsService, directionsDisplay);
 
     };
+    //Event listeners for selected filters in dropdown
+    $("#selectClass").change(onChangeHandler);
+    $("#selectSuburb").change(onChangeHandler);
+    var selectedClass = $("#selectClass").val();
+    var selectedSuburb = $("#selectSuburb").val();
+    console.log(selectedClass, selectedSuburb);
+    
+
     // suburbForm.addEventListener('change', onChangeHandler);
     // classTimeForm.addEventListener('change', onChangeHandler);
     // transportForm.addEventListener('change', onChangeHandler);
