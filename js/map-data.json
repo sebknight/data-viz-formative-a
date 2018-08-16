@@ -1,0 +1,123 @@
+[
+  {
+    "id": 1,
+    "class": "18WDWU02",
+    "transport": "walk",
+    "suburb": "Te Aro"
+  },
+  {
+    "id": 2,
+    "class": "18WDWU02",
+    "transport": "walk",
+    "suburb": "Te Aro"
+  },
+  {
+    "id": 3,
+    "class": "18WDWU02",
+    "transport": "walk",
+    "suburb": "Mount Cook"
+  },
+  {
+    "id": 4,
+    "class": "18WDWU02",
+    "transport": "walk",
+    "suburb": "Thorndon"
+  },
+  {
+    "id": 5,
+    "class": "18WDWU02",
+    "transport": "bus",
+    "suburb": "Grenada Village"
+  },
+  {
+    "id": 6,
+    "class": "18WDWU02",
+    "transport": "bus",
+    "suburb": "Evans Bay"
+  },
+  {
+    "id": 7,
+    "class": "18WDWU02",
+    "transport": "bus",
+    "suburb": "Island Bay"
+  },
+  {
+    "id": 8,
+    "class": "18WDWU02",
+    "transport": "train",
+    "suburb": "Wainuiomata"
+  },
+  {
+    "id": 9,
+    "class": "18WDWU02",
+    "transport": "train",
+    "suburb": "Wainuiomata"
+  },
+  {
+    "id": 10,
+    "class": "18WDWU02",
+    "transport": "drive",
+    "suburb": "Hataitai"
+  },
+  {
+    "id": 11,
+    "class": "18WDWU02",
+    "transport": "drive",
+    "suburb": "Ngaio"
+  },
+  {
+    "id": 12,
+    "class": "18WDCD07",
+    "transport": "walk",
+    "suburb": "Te Aro"
+  },
+  {
+    "id": 13,
+    "class": "18WDCD07",
+    "transport": "walk",
+    "suburb": "Te Aro"
+  },
+  {
+    "id": 14,
+    "class": "18WDCD07",
+    "transport": "bus",
+    "suburb": "Mount Cook"
+  },
+  {
+    "id": 15,
+    "class": "18WDCD07",
+    "transport": "bus",
+    "suburb": "Thorndon"
+  },
+  {
+    "id": 16,
+    "class": "18WDCD07",
+    "transport": "bus",
+    "suburb": "Grenada Village"
+  },
+  {
+    "id": 17,
+    "class": "18WDCD07",
+    "transport": "bus",
+    "suburb": "Evans Bay"
+  },
+  {
+    "id": 18,
+    "class": "18WDCD07",
+    "transport": "bus",
+    "suburb": "Island Bay"
+  },
+  {
+    "id": 19,
+    "class": "18WDCD07",
+    "transport": "train",
+    "suburb": "Wainuiomata"
+  },
+  {
+    "id": 20,
+    "class": "18WDCD07",
+    "transport": "drive",
+    "suburb": "Wainuiomata"
+  }
+
+]
