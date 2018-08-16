@@ -1,8 +1,8 @@
 function initMap() {
 
-    var suburbForm = document.getElementById('suburb-form');
-    var classTimeForm = document.getElementById('class-time-form');
-    var transportForm = document.getElementById('transport-form');
+    var suburbForm = document.getElementById('suburbForm');
+    var classTimeForm = document.getElementById('classTimeForm');
+    var transportForm = document.getElementById('transportForm');
     var directionsService = new google.maps.DirectionsService;
     var directionsDisplay = new google.maps.DirectionsRenderer;
     var yoobee = new google.maps.LatLng(-41.279113, 174.780283);
