@@ -46,13 +46,25 @@ body {
   margin-bottom: 2em;
 }
 
-.dropdown {
-  display: inline;
+button {
+  padding: 3px;
+  border-radius: 5px;
 }
 
-.dropdown-toggle {
-  background-color: #67BAE7;
-  color: floralwhite;
-  margin-left: 1rem;
+#18WDWG04 {
+  color: #000;
+  background-color: #00ACC1;
+}
+
+#18WDWU02 {
+  background-color: #4285F4;
+}
+
+#18WDWG04 {
+  background-color: #131921;
+}
+
+#all {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
