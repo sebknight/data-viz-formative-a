@@ -1,6 +1,6 @@
+
 // global variable
 var mapData;
-var data;
 
 // Start ajax request
 $.ajax({
@@ -10,27 +10,20 @@ $.ajax({
     success: function (jsonData) {
 
         initMap();
-        // Here we are pushing the data we recieved into our global variable
+        // Pushing the data we recieved into our global variable
         mapData = jsonData;
         console.log(mapData);
 
         //Dynamically populate class select form
-        function populateFilterLists(){
-            for (var i = 0; i < data.length; i++) {
-                $("#selectClass").append("<option id='" + data[i].class + "Class' value='" + data[i].class + "'>" + data[i].class + "</option>");
-            }
+        function populateFilterList(){
             for (var i = 0; i < mapData.length; i++) {
                 $("#selectSuburb").append("<option id='" + mapData[i].suburb + "' value='" + mapData[i].suburb + "'>" + mapData[i].suburb + "</option>");
             }
-        }
-        
-        populateFilterLists();
-        
-
+        }     
+        populateFilterList();
     },
     error: function (error) {
         console.log(error);
-        console.log('error');
     }
 });
 // End ajax request
@@ -43,38 +36,35 @@ function initMap() {
     var yoobee = new google.maps.LatLng(-41.279113, 174.780283);
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 13,
-        center: yoobee
+        center: yoobee,
+        mapTypeControl: false,
+        streetViewControl: false,
+        fullscreenControl: false
     });
-
+  
     directionsDisplay.setMap(map);
 
- 
-    //Event listeners for selected filters in dropdown
-    $("#selectClass").change(onChangeHandler);
-    // console.log($("#selectClass").val());
-    
-
-    // $("#selectSuburb").change(onChangeHandler);
-
-  
-    var onChangeHandler = function () {
-        checkAvailableSuburbs();        
-
-        calculateAndDisplayRoute(directionsService, directionsDisplay);
-
-    };
-
-    
+    var onChangeHandler = function () {             
+            calculateAndDisplayRoute(directionsService, directionsDisplay);
+        };    
+    //event listener    
+    $("#selectSuburb").change(onChangeHandler);
 
 
     function calculateAndDisplayRoute(directionsService, directionsDisplay) {
-        var suburbName = selectSuburb.value;
+        //Get selected suburb's name
+        var suburbName = $("#selectSuburb").val();
+        //Find the mode of transport for trips from that suburb 
         for (var i = 0; i < mapData.length; i++) {
             var transportType = mapData[i].transport;
-            
-        }
+            //when found, stop loop
+            if (suburbName == mapData[i].suburb){
+                break;
+            }            
+        };
 
-        directionsService.route({
+        directionsService.route({  
+            //call route with variables   
             origin: suburbName,
             destination: yoobee,
             travelMode: transportType
@@ -83,13 +73,15 @@ function initMap() {
             function (response, status) {
                 if (status === 'OK') {
                     directionsDisplay.setDirections(response);
-                    // $("#mapInfo").text("Students travel from "+suburbName+" via "+transportType);
+                    //convert transportType to lower case and output string to DOM
+                    var transportOutput = transportType.toLowerCase();
+                    $("#mapInfo").text("Students travel from "+suburbName+" by "+transportOutput+".");
                 } else {
                     window.alert('Directions request failed due to ' + status);
                 }
             });
+        } //calculateAndDisplayRoute ENDS
+    } //initMap ENDS
 
-    } //calculateAndDisplayRoute ENDS
 
-}
-
+ //iife ENDS
