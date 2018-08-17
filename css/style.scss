@@ -3,12 +3,14 @@ $blue: #67BAE7;
 $yellow: #EEAD48;
 $black: #131921;
 $grey: #353F4C;
+$buttonOne: #00ACC1;
+$buttonTwo: #4285F4;
+$buttonThree: #131921;
 
 body{
   color: #FFF;
   background-color: $black;
   font-family: 'Questrial', sans-serif;
-
 }
 
 .container-fluid{
@@ -55,6 +57,24 @@ body{
     // outline: 1px solid $grey;
     height: 400px;
     margin-bottom: 2em;
+}
+
+button{
+  padding: 3px;
+  border-radius: 5px;
+}
+
+#18WDWG04{
+  color: #000;
+  background-color: $buttonOne;
+}
+
+#18WDWU02{
+  background-color: $buttonTwo;
+}
+
+#18WDWG04{
+  background-color: $buttonThree;
 }
 
 #all{
