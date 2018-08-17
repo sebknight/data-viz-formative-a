@@ -9,97 +9,153 @@
     "id": 2,
     "class": "18WDWU02",
     "transport": "WALKING",
-    "suburb": "Mount Cook, Wellington"
+    "suburb": "Te Aro, Wellington"
   },
   {
     "id": 3,
     "class": "18WDWU02",
     "transport": "WALKING",
-    "suburb": "Thorndon, Wellington"
+    "suburb": "Mount Cook, Wellington"
   },
   {
     "id": 4,
     "class": "18WDWU02",
-    "transport": "TRANSIT",
-    "suburb": "Grenada Village, Wellington"
+    "transport": "WALKING",
+    "suburb": "Thorndon, Wellington"
   },
   {
     "id": 5,
     "class": "18WDWU02",
     "transport": "TRANSIT",
-    "suburb": "Evans Bay, Wellington"
+    "suburb": "Grenada Village, Wellington"
   },
   {
     "id": 6,
     "class": "18WDWU02",
     "transport": "TRANSIT",
-    "suburb": "Island Bay, Wellington"
+    "suburb": "Evans Bay, Wellington"
   },
   {
     "id": 7,
+    "class": "18WDWU02",
+    "transport": "TRANSIT",
+    "suburb": "Island Bay, Wellington"
+  },
+  {
+    "id": 8,
+    "class": "18WDWU02",
+    "transport": "TRANSIT",
+    "suburb": "Wainuiomata, Wellington"
+  },
+  {
+    "id": 9,
+    "class": "18WDWU02",
+    "transport": "TRANSIT",
+    "suburb": "Wainuiomata, Wellington"
+  },
+  {
+    "id": 10,
     "class": "18WDWU02",
     "transport": "DRIVING",
     "suburb": "Hataitai, Wellington"
   },
   {
-    "id": 8,
+    "id": 11,
     "class": "18WDWU02",
     "transport": "DRIVING",
     "suburb": "Ngaio, Wellington"
   },
   {
-    "id": 9,
+    "id": 12,
     "class": "18WDCD07",
     "transport": "WALKING",
     "suburb": "Mount Cook, Wellington"
   },
   {
-    "id": 10,
+    "id": 13,
     "class": "18WDCD07",
     "transport": "WALKING",
     "suburb": "Thorndon, Wellington"
   },
   {
-    "id": 11,
+    "id": 14,
     "class": "18WDCD07",
     "transport": "TRANSIT",
     "suburb": "Newtown, Wellington"
   },
   {
-    "id": 12,
+    "id": 15,
+    "class": "18WDCD07",
+    "transport": "TRANSIT",
+    "suburb": "Newtown, Wellington"
+  },
+  {
+    "id": 16,
+    "class": "18WDCD07",
+    "transport": "TRANSIT",
+    "suburb": "Newtown, Wellington"
+  },
+  {
+    "id": 17,
+    "class": "18WDCD07",
+    "transport": "TRANSIT",
+    "suburb": "Wainuiomata, Wellington"
+  },
+  {
+    "id": 18,
+    "class": "18WDCD07",
+    "transport": "TRANSIT",
+    "suburb": "Mount Victoria, Wellington"
+  },
+  {
+    "id": 19,
     "class": "18WDCD07",
     "transport": "TRANSIT",
     "suburb": "Newlands, Wellington"
   },
   {
-    "id": 13,
+    "id": 20,
     "class": "18WDCD07",
     "transport": "DRIVING",
     "suburb": "Wainuiomata, Wellington"
   },
   {
-    "id": 14,
+    "id": 21,
+    "class": "18WDWG04",
+    "transport": "WALKING",
+    "suburb": "Mount Cook, Wellington"
+  },
+  {
+    "id": 22,
     "class": "18WDWG04",
     "transport": "WALKING",
     "suburb": "Mount Victoria, Wellington"
   },
   {
-    "id": 15,
+    "id": 23,
     "class": "18WDWG04",
     "transport": "TRANSIT",
     "suburb": "Strathmore, Wellington"
   },
   {
-    "id": 16,
+    "id": 24,
     "class": "18WDWG04",
     "transport": "TRANSIT",
     "suburb": "Lower Hutt, Wellington"
   },
   {
-    "id": 17,
+    "id": 25,
+    "class": "18WDWG04",
+    "transport": "TRANSIT",
+    "suburb": "Lower Hutt, Wellington"
+  },
+  {
+    "id": 26,
     "class": "18WDWG04",
     "transport": "DRIVING",
     "suburb": "Levin, Wellington"
   }
 ]
+
+
 

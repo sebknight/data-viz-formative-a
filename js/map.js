@@ -1,4 +1,5 @@
 // global variable
+var mapData;
 var data;
 
 // Start ajax request
@@ -8,11 +9,26 @@ $.ajax({
     dataType: 'json',
     success: function (jsonData) {
         // Here we are console logging the data we have recieved from the request
-        console.log(jsonData);
+        // console.log(jsonData);
         // On success the chart is initialised
         initMap();
         // Here we are pushing the data we recieved into our global variable
-        data = jsonData;
+        mapData = jsonData;
+        console.log(mapData);
+        
+        // Populating class select form options dynamically
+        // var selectClass = $("#selectClass");
+        // var selectSuburb = $("#selectSuburb");
+
+        for (var i = 0; i < data.length; i++) {
+           $("#selectClass").append("<option id='" + data[i].id + "' value='" + data[i].class + "'>"+ data[i].class +"</option>");
+            
+            console.log("populating");          
+       }
+        for (var i = 0; i < mapData.length; i++) {
+            $("#selectSuburb").append("<option id='" + mapData[i].suburb + "' value='" + mapData[i].suburb + "'>" + mapData[i].suburb + "</option>");
+        }
+
     },
     error: function (error) {
         console.log(error);
@@ -41,27 +57,19 @@ function initMap() {
     //Event listeners for selected filters in dropdown
     $("#selectClass").change(onChangeHandler);
     $("#selectSuburb").change(onChangeHandler);
-    var selectedClass = $("#selectClass").val();
-    var selectedSuburb = $("#selectSuburb").val();
-    console.log(selectedClass, selectedSuburb);
-    
-
-    // suburbForm.addEventListener('change', onChangeHandler);
-    // classTimeForm.addEventListener('change', onChangeHandler);
-    // transportForm.addEventListener('change', onChangeHandler);
 
 
     function calculateAndDisplayRoute(directionsService, directionsDisplay) {
-        var classTime = times.classTimeName;
-        var suburbName = suburbForm.value;
+        // var classTime = times.classTimeName;
+        var suburbName = selectSuburb.value;
         var transportType = transportForm.value;
 
         directionsService.route({
             origin: suburbName,
             destination: yoobee,
-            travelMode: transportType,
+            travelMode: 'DRIVING',
             transitOptions: {
-                arrivalTime: classTime
+                // arrivalTime: classTime
             }
         },
 
