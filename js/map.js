@@ -62,7 +62,7 @@ function initMap() {
     function calculateAndDisplayRoute(directionsService, directionsDisplay) {
         // var classTime = times.classTimeName;
         var suburbName = selectSuburb.value;
-        var transportType = transportForm.value;
+        // var transportType = transportForm.value;
 
         directionsService.route({
             origin: suburbName,
