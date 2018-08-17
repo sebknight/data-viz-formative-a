@@ -8,26 +8,24 @@ $.ajax({
     url: 'js/map-data.json',
     dataType: 'json',
     success: function (jsonData) {
-        // Here we are console logging the data we have recieved from the request
-        // console.log(jsonData);
-        // On success the chart is initialised
+
         initMap();
         // Here we are pushing the data we recieved into our global variable
         mapData = jsonData;
         console.log(mapData);
-        
-        // Populating class select form options dynamically
-        // var selectClass = $("#selectClass");
-        // var selectSuburb = $("#selectSuburb");
 
-        for (var i = 0; i < data.length; i++) {
-           $("#selectClass").append("<option id='" + data[i].id + "' value='" + data[i].class + "'>"+ data[i].class +"</option>");
-            
-            console.log("populating");          
-       }
-        for (var i = 0; i < mapData.length; i++) {
-            $("#selectSuburb").append("<option id='" + mapData[i].suburb + "' value='" + mapData[i].suburb + "'>" + mapData[i].suburb + "</option>");
+        //Dynamically populate class select form
+        function populateFilterLists(){
+            for (var i = 0; i < data.length; i++) {
+                $("#selectClass").append("<option id='" + data[i].class + "Class' value='" + data[i].class + "'>" + data[i].class + "</option>");
+            }
+            for (var i = 0; i < mapData.length; i++) {
+                $("#selectSuburb").append("<option id='" + mapData[i].suburb + "' value='" + mapData[i].suburb + "'>" + mapData[i].suburb + "</option>");
+            }
         }
+        
+        populateFilterLists();
+        
 
     },
     error: function (error) {
@@ -50,32 +48,42 @@ function initMap() {
 
     directionsDisplay.setMap(map);
 
+ 
+    //Event listeners for selected filters in dropdown
+    $("#selectClass").change(onChangeHandler);
+    // console.log($("#selectClass").val());
+    
+
+    // $("#selectSuburb").change(onChangeHandler);
+
+  
     var onChangeHandler = function () {
+        checkAvailableSuburbs();        
+
         calculateAndDisplayRoute(directionsService, directionsDisplay);
 
     };
-    //Event listeners for selected filters in dropdown
-    $("#selectClass").change(onChangeHandler);
-    $("#selectSuburb").change(onChangeHandler);
+
+    
 
 
     function calculateAndDisplayRoute(directionsService, directionsDisplay) {
-        // var classTime = times.classTimeName;
         var suburbName = selectSuburb.value;
-        // var transportType = transportForm.value;
+        for (var i = 0; i < mapData.length; i++) {
+            var transportType = mapData[i].transport;
+            
+        }
 
         directionsService.route({
             origin: suburbName,
             destination: yoobee,
-            travelMode: 'DRIVING',
-            transitOptions: {
-                // arrivalTime: classTime
-            }
+            travelMode: transportType
         },
 
             function (response, status) {
                 if (status === 'OK') {
                     directionsDisplay.setDirections(response);
+                    // $("#mapInfo").text("Students travel from "+suburbName+" via "+transportType);
                 } else {
                     window.alert('Directions request failed due to ' + status);
                 }
