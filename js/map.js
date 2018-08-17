@@ -2,6 +2,7 @@
 // global variable
 var mapData;
 
+
 // Start ajax request
 $.ajax({
     type: 'get',
@@ -41,7 +42,8 @@ function initMap() {
         streetViewControl: false,
         fullscreenControl: false
     });
-  
+    
+    
     directionsDisplay.setMap(map);
 
     var onChangeHandler = function () {             
@@ -49,11 +51,17 @@ function initMap() {
         };    
     //event listener    
     $("#selectSuburb").change(onChangeHandler);
+    $("#selectTime").change(onChangeHandler);
 
 
     function calculateAndDisplayRoute(directionsService, directionsDisplay) {
         //Get selected suburb's name
         var suburbName = $("#selectSuburb").val();
+        //Set arrival time to prevent site breaking when used outside of public transit hours
+        var morning = new Date();
+        morning.setHours(20);
+        morning.setMinutes(30);
+
         //Find the mode of transport for trips from that suburb 
         for (var i = 0; i < mapData.length; i++) {
             var transportType = mapData[i].transport;
@@ -67,7 +75,11 @@ function initMap() {
             //call route with variables   
             origin: suburbName,
             destination: yoobee,
-            travelMode: transportType
+            travelMode: transportType,
+            transitOptions: {
+                arrivalTime: morning
+            }
+
         },
 
             function (response, status) {
